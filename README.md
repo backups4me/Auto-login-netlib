@@ -9,13 +9,14 @@
 🇭🇰 使用香港时区显示时间
 
 ### 环境变量配置
-1. 在 GitHub 仓库的 Settings → Secrets and variables → Actions 中添加以下环境变量：
+1. 在 GitHub 仓库的 Settings → Secrets and variables → Actions 中添加以下环境变量
+```
+ACCOUNTS	Netlib账户信息(必填)，格式：user1:pass1,user2:pass2
 
-变量名	说明	示例
-ACCOUNTS	Netlib 账户信息，格式：用户名,密码	user1,pass1;user2,pass2
 BOT_TOKEN	Telegram机器人Token	123456:ABC-DEF1234ghIkl-zyx57W2v1u1212Dtr
 CHAT_ID	Telegram 聊天 ID	123456789
 不需要telegram通知可不配置
+```
 
 使用方法
 2. GitHub Actions 自动运行
